@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-{
-  "pack": {
-    "pack_format": 48,
-    "description": "Easily call your horse with a goat horn - [1.21] - v.1.0.1"
-  }
-=======
 {
   "pack": {
     "pack_format": 71,
@@ -42,5 +35,4 @@
       }
     ]
   }
->>>>>>> Stashed changes
 }
