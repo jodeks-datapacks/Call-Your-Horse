@@ -1,5 +1,13 @@
+<<<<<<< Updated upstream
 {
   "values": [
   "callyourhorse:load"
 ]
+=======
+{
+  "values": [
+  "callyourhorse:load",
+  "callyourhorse:load_message"
+]
+>>>>>>> Stashed changes
 }
