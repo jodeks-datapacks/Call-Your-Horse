@@ -1,0 +1,1 @@
+$execute store success score &UUID_check check.callyourhorse run data modify storage callyourhorse:root UUID set from entity @e[predicate=callyourhorse:horse_selector_callable,limit=1,tag=horse_can_called,nbt={UUID:$(horse_UUID_from_horn)}] Owner
