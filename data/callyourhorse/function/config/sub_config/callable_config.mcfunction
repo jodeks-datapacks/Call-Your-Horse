@@ -61,8 +61,16 @@ $dialog show @s {\
     {\
       "type": "minecraft:boolean",\
       "key": "dialog_zombie_horse_callable",\
-      "label": "Zombie Horse",\
+      "label": "Camel",\
       "initial": $(zombie_horse_callable),\
+      "on_true": "1",\
+      "on_false": "0"\
+    },\
+    {\
+      "type": "minecraft:boolean",\
+      "key": "dialog_camel_callable",\
+      "label": "Camel",\
+      "initial": $(camel_callable),\
       "on_true": "1",\
       "on_false": "0"\
     }\
@@ -72,7 +80,7 @@ $dialog show @s {\
     "label": "Save",\
     "action": {\
       type:"dynamic/run_command",\
-      template:"function callyourhorse:config/sub_config/save_callable_config {dialog_horse_callable:$(dialog_horse_callable),dialog_donkey_callable:$(dialog_donkey_callable),dialog_mule_callable:$(dialog_mule_callable),dialog_llama_callable:$(dialog_llama_callable),dialog_trader_llama_callable:$(dialog_trader_llama_callable),dialog_skeleton_horse_callable:$(dialog_skeleton_horse_callable),dialog_zombie_horse_callable:$(dialog_zombie_horse_callable)}"\
+      template:"function callyourhorse:config/sub_config/save_callable_config {dialog_horse_callable:$(dialog_horse_callable),dialog_donkey_callable:$(dialog_donkey_callable),dialog_mule_callable:$(dialog_mule_callable),dialog_llama_callable:$(dialog_llama_callable),dialog_trader_llama_callable:$(dialog_trader_llama_callable),dialog_skeleton_horse_callable:$(dialog_skeleton_horse_callable),dialog_zombie_horse_callable:$(dialog_zombie_horse_callable),dialog_camel_callable:$(dialog_camel_callable)}"\
     }\
   },\
   actions:[\

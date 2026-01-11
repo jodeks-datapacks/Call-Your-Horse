@@ -21,6 +21,8 @@ execute if score &UUID_check check.callyourhorse matches 0 run function callyour
 
 execute if score &UUID_check check.callyourhorse matches 0 run function callyourhorse:get_data/player_name
 
+execute if score &UUID_check check.callyourhorse matches 0 run function callyourhorse:get_data/audioplayer
+
 # get horse UUID to store in goat horn
 execute if score &UUID_check check.callyourhorse matches 0 run data modify storage callyourhorse:root horse_UUID_to_call set from entity @e[limit=1,tag=horse_to_call] UUID
 
@@ -34,9 +36,10 @@ scoreboard players set &UUID_check check.callyourhorse 1
 
 tag @e[tag=horse_to_call] remove horse_to_call
 
-data remove storage callyourhorse:root UUID
-data remove storage callyourhorse:root goat_horn_slot
-data remove storage callyourhorse:root goat_horn_instrument
-data remove storage callyourhorse:root horse_UUID_to_call
-data remove storage callyourhorse:root horse_name
-data remove storage callyourhorse:root player_name
+# data remove storage callyourhorse:root UUID
+# data remove storage callyourhorse:root goat_horn_slot
+# data remove storage callyourhorse:root goat_horn_instrument
+# data remove storage callyourhorse:root goat_horn_audioplayer
+# data remove storage callyourhorse:root horse_UUID_to_call
+# data remove storage callyourhorse:root horse_name
+# data remove storage callyourhorse:root player_name

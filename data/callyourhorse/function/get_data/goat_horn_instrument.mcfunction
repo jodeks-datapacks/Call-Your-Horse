@@ -1,1 +1,2 @@
-data modify storage callyourhorse:root goat_horn_instrument set from entity @s SelectedItem.components."minecraft:instrument"
+execute if data entity @s SelectedItem.components."minecraft:custom_data".audioplayer run data modify storage callyourhorse:root goat_horn_instrument set value "minecraft:ponder_goat_horn"
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".audioplayer run data modify storage callyourhorse:root goat_horn_instrument set from entity @s SelectedItem.components."minecraft:instrument"

@@ -12,6 +12,8 @@ $data modify storage callyourhorse:root skeleton_horse_callable_without_owner se
 
 $data modify storage callyourhorse:root zombie_horse_callable_without_owner set value $(dialog_zombie_horse_callable_without_owner)
 
+$data modify storage callyourhorse:root camel_callable_without_owner set value $(dialog_camel_callable_without_owner)
+
 
 $scoreboard players set &horse_callable_without_owner callyourhorse.config $(dialog_horse_callable_without_owner)
 
@@ -27,6 +29,7 @@ $scoreboard players set &skeleton_horse_callable_without_owner callyourhorse.con
 
 $scoreboard players set &zombie_horse_callable_without_owner callyourhorse.config $(dialog_zombie_horse_callable_without_owner)
 
+$scoreboard players set &camel_callable_without_owner callyourhorse.config $(dialog_camel_callable_without_owner)
 
 data modify storage callyourhorse:root dialog_horse_callable_without_owner set value "$(dialog_horse_callable_without_owner)"
 data modify storage callyourhorse:root dialog_donkey_callable_without_owner set value "$(dialog_donkey_callable_without_owner)"
@@ -35,5 +38,6 @@ data modify storage callyourhorse:root dialog_llama_callable_without_owner set v
 data modify storage callyourhorse:root dialog_trader_llama_callable_without_owner set value "$(dialog_trader_llama_callable_without_owner)"
 data modify storage callyourhorse:root dialog_skeleton_horse_callable_without_owner set value "$(dialog_skeleton_horse_callable_without_owner)"
 data modify storage callyourhorse:root dialog_zombie_horse_callable_without_owner set value "$(dialog_zombie_horse_callable_without_owner)"
+data modify storage callyourhorse:root dialog_camel_callable_without_owner set value "$(dialog_camel_callable_without_owner)"
 
 trigger callyourhorse.config

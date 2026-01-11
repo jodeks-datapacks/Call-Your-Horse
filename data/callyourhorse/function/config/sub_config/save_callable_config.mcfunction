@@ -12,6 +12,8 @@ $data modify storage callyourhorse:root skeleton_horse_callable set value $(dial
 
 $data modify storage callyourhorse:root zombie_horse_callable set value $(dialog_zombie_horse_callable)
 
+$data modify storage callyourhorse:root camel_callable set value $(dialog_camel_callable)
+
 
 $scoreboard players set &horse_callable callyourhorse.config $(dialog_horse_callable)
 
@@ -27,6 +29,8 @@ $scoreboard players set &skeleton_horse_callable callyourhorse.config $(dialog_s
 
 $scoreboard players set &zombie_horse_callable callyourhorse.config $(dialog_zombie_horse_callable)
 
+$scoreboard players set &camel_callable callyourhorse.config $(dialog_camel_callable)
+
 
 data modify storage callyourhorse:root dialog_horse_callable set value "$(dialog_horse_callable)"
 data modify storage callyourhorse:root dialog_donkey_callable set value "$(dialog_donkey_callable)"
@@ -35,5 +39,6 @@ data modify storage callyourhorse:root dialog_llama_callable set value "$(dialog
 data modify storage callyourhorse:root dialog_trader_llama_callable set value "$(dialog_trader_llama_callable)"
 data modify storage callyourhorse:root dialog_skeleton_horse_callable set value "$(dialog_skeleton_horse_callable)"
 data modify storage callyourhorse:root dialog_zombie_horse_callable set value "$(dialog_zombie_horse_callable)"
+data modify storage callyourhorse:root dialog_camel_callable set value "$(dialog_camel_callable)"
 
 trigger callyourhorse.config

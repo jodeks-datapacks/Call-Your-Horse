@@ -169,6 +169,30 @@
             "range": 1
           }
         ]
+      },
+      {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:camel"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&camel_callable"
+              },
+              "score": "callyourhorse.config"
+            },
+            "range": 1
+          }
+        ]
       }
     ]
   }

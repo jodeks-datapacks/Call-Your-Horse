@@ -26,6 +26,8 @@ execute unless score &skeleton_horse_callable callyourhorse.config = &skeleton_h
 
 execute unless score &zombie_horse_callable callyourhorse.config = &zombie_horse_callable callyourhorse.config run data modify storage callyourhorse:root zombie_horse_callable set value 1
 
+execute unless score &camel_callable callyourhorse.config = &camel_callable callyourhorse.config run data modify storage callyourhorse:root camel_callable set value 1
+
 
 execute unless score &horse_callable_without_owner callyourhorse.config = &horse_callable_without_owner callyourhorse.config run data modify storage callyourhorse:root horse_callable_without_owner set value 0
 
@@ -39,6 +41,8 @@ execute unless score &trader_llama_callable_without_owner callyourhorse.config =
 
 execute unless score &skeleton_horse_callable_without_owner callyourhorse.config = &skeleton_horse_callable_without_owner callyourhorse.config run data modify storage callyourhorse:root skeleton_horse_callable_without_owner set value 1
 
+execute unless score &camel_callable_without_owner callyourhorse.config = &camel_callable_without_owner callyourhorse.config run data modify storage callyourhorse:root camel_callable_without_owner set value 1
+
 execute unless score &zombie_horse_callable_without_owner callyourhorse.config = &zombie_horse_callable_without_owner callyourhorse.config run data modify storage callyourhorse:root zombie_horse_callable_without_owner set value 1
 
 data modify storage callyourhorse:root dialog_horse_callable set value "$(dialog_horse_callable)"
@@ -48,6 +52,7 @@ data modify storage callyourhorse:root dialog_llama_callable set value "$(dialog
 data modify storage callyourhorse:root dialog_trader_llama_callable set value "$(dialog_trader_llama_callable)"
 data modify storage callyourhorse:root dialog_skeleton_horse_callable set value "$(dialog_skeleton_horse_callable)"
 data modify storage callyourhorse:root dialog_zombie_horse_callable set value "$(dialog_zombie_horse_callable)"
+data modify storage callyourhorse:root dialog_camel_callable set value "$(dialog_camel_callable)"
 
 data modify storage callyourhorse:root dialog_horse_callable_without_owner set value "$(dialog_horse_callable_without_owner)"
 data modify storage callyourhorse:root dialog_donkey_callable_without_owner set value "$(dialog_donkey_callable_without_owner)"
@@ -56,7 +61,7 @@ data modify storage callyourhorse:root dialog_llama_callable_without_owner set v
 data modify storage callyourhorse:root dialog_trader_llama_callable_without_owner set value "$(dialog_trader_llama_callable_without_owner)"
 data modify storage callyourhorse:root dialog_skeleton_horse_callable_without_owner set value "$(dialog_skeleton_horse_callable_without_owner)"
 data modify storage callyourhorse:root dialog_zombie_horse_callable_without_owner set value "$(dialog_zombie_horse_callable_without_owner)"
-
+data modify storage callyourhorse:root dialog_camel_callable_without_owner set value "$(dialog_camel_callable_without_owner)"
 
 execute unless score &horse_callable callyourhorse.config = &horse_callable callyourhorse.config run scoreboard players set &horse_callable callyourhorse.config 1
 
@@ -72,6 +77,8 @@ execute unless score &skeleton_horse_callable callyourhorse.config = &skeleton_h
 
 execute unless score &zombie_horse_callable callyourhorse.config = &zombie_horse_callable callyourhorse.config run scoreboard players set &zombie_horse_callable callyourhorse.config 1
 
+execute unless score &camel_callable callyourhorse.config = &camel_callable callyourhorse.config run scoreboard players set &camel_callable callyourhorse.config 1
+
 
 execute unless score &horse_callable_without_owner callyourhorse.config = &horse_callable_without_owner callyourhorse.config run scoreboard players set &horse_callable_without_owner callyourhorse.config 0
 
@@ -86,3 +93,5 @@ execute unless score &trader_llama_callable_without_owner callyourhorse.config =
 execute unless score &skeleton_horse_callable_without_owner callyourhorse.config = &skeleton_horse_callable_without_owner callyourhorse.config run scoreboard players set &skeleton_horse_callable_without_owner callyourhorse.config 1
 
 execute unless score &zombie_horse_callable_without_owner callyourhorse.config = &zombie_horse_callable_without_owner callyourhorse.config run scoreboard players set &zombie_horse_callable_without_owner callyourhorse.config 1
+
+execute unless score &camel_callable_without_owner callyourhorse.config = &camel_callable_without_owner callyourhorse.config run scoreboard players set &camel_callable_without_owner callyourhorse.config 1

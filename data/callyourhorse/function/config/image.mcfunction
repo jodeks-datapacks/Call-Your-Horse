@@ -16,7 +16,7 @@ function callyourhorse:image/set_image_data {\
     "Call Your Horse",\
     {text: "Easily call your horse with a goat horn", color: "#aaaaaa"},\
     "",\
-    [{text: "Datapack version: ", color: "#00a800"}, {text: "v1.5.2", color: "#54fc54"}],\
+    [{text: "Datapack version: ", color: "#00a800"}, {text: "v1.6.2", color: "#54fc54"}],\
     [{text: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
     "",\
     [{text: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\

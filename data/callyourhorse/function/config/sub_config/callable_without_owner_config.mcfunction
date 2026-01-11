@@ -65,6 +65,14 @@ $dialog show @s {\
       "initial": $(zombie_horse_callable_without_owner),\
       "on_true": "1",\
       "on_false": "0"\
+    },\
+    {\
+      "type": "minecraft:boolean",\
+      "key": "dialog_camel_callable_without_owner",\
+      "label": "Camel",\
+      "initial": $(camel_callable_without_owner),\
+      "on_true": "1",\
+      "on_false": "0"\
     }\
   ],\
   columns:1,\
@@ -72,7 +80,7 @@ $dialog show @s {\
     "label": "Save",\
     "action": {\
       type:"dynamic/run_command",\
-      template:"function callyourhorse:config/sub_config/save_callable_without_owner_config {dialog_horse_callable_without_owner:$(dialog_horse_callable_without_owner),dialog_donkey_callable_without_owner:$(dialog_donkey_callable_without_owner),dialog_mule_callable_without_owner:$(dialog_mule_callable_without_owner),dialog_llama_callable_without_owner:$(dialog_llama_callable_without_owner),dialog_trader_llama_callable_without_owner:$(dialog_trader_llama_callable_without_owner),dialog_skeleton_horse_callable_without_owner:$(dialog_skeleton_horse_callable_without_owner),dialog_zombie_horse_callable_without_owner:$(dialog_zombie_horse_callable_without_owner)}"\
+      template:"function callyourhorse:config/sub_config/save_callable_without_owner_config {dialog_horse_callable_without_owner:$(dialog_horse_callable_without_owner),dialog_donkey_callable_without_owner:$(dialog_donkey_callable_without_owner),dialog_mule_callable_without_owner:$(dialog_mule_callable_without_owner),dialog_llama_callable_without_owner:$(dialog_llama_callable_without_owner),dialog_trader_llama_callable_without_owner:$(dialog_trader_llama_callable_without_owner),dialog_skeleton_horse_callable_without_owner:$(dialog_skeleton_horse_callable_without_owner),dialog_zombie_horse_callable_without_owner:$(dialog_zombie_horse_callable_without_owner),dialog_camel_callable_without_owner:$(dialog_camel_callable_without_owner)}"\
     }\
   },\
   actions:[\

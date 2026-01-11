@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "used_goat_horn_offhand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{equipment:{offhand:{id:\"minecraft:goat_horn\",components:{\"minecraft:custom_data\":{tag:{goat_horn_to_call_horse:1b}}}}}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "callyourhorse:teleport/get_horse_uuid_offhand"
+  }
+}
