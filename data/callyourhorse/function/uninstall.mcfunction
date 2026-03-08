@@ -5,8 +5,6 @@ advancement revoke @a only jodek:root
 
 scoreboard objectives remove check.callyourhorse
 
-scoreboard objectives remove use_goat_horn
-
 scoreboard objectives remove store_position.callyourhorse
 
 scoreboard objectives remove sneak_time.callyourhorse

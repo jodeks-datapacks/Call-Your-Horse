@@ -1,33 +1,28 @@
-# Call Your Horse
-
-<div style="display: flex; gap: 20px;">
-<a href="https://ko-fi.com/H2H011LYHJ"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"/></a>
+<div align="center">
   
-<a href="https://github.com/sponsors/Jodekq" target="_blank">
-  <img src="https://img.shields.io/badge/Sponsor-Jodek-green?style=for-the-badge&logo=github&logoWidth=20" alt="Sponsor @Jodek" />
-</a>
+![minecraft datapack call your horse whistel horse minecraft mod](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/callyourhorsev1.png)
+
 </div>
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/tip.svg">
-  <img alt="Tip" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/tip.svg">
-</picture>
- 
-Questions or issues? -> [discord server](https://discord.gg/z2n3qTzQY6) | _or create an issue on github_
+<div align="center">
+
+[![jodeks discord - discord badge - pixel badge - pixel discord badge - jodeks datapacks - datapacks discord](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/Discord.png)](https://discord.gg/z2n3qTzQY6)&nbsp;&nbsp;
+[![matrix - datapacks matrix - jodeks datapacks matrix](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/Matrix.png)](https://matrix.to/#/#jodeks_datapacks:matrix.org)&nbsp;&nbsp;
+[![armor stand arms minecraft datapack github issues](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/GH_Issues.png)](https://github.com/jodeks-datapacks/Call-Your-Horse/issues)&nbsp;&nbsp;
+[![jodeks datapacks kofi - jodek kofi - minecraft datapack kofi donation](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/Kofi.png)](https://ko-fi.com/jodek)&nbsp;&nbsp;
+[![github sponsor jodek donation datapacks minecraft](https://raw.githubusercontent.com/jodeks-datapacks/Assets/main/uploads/GH_Sponsor_Pink.png)](https://github.com/sponsors/Jodekq)
+
+</div>
 
 ### Easily call your horse with a goat horn whenever you need it
 
 _The horse can be anywhere, it always works to teleport it to you, even in unloaded chunks_
 
-There's currently a bug (should be fixed in 1.21), where if the horse you want to call is too far away it will be invisible after the teleport 
-
---> to fix that you have to **rejoin the game**
-
 ## How it works
 
 **1.** Tame a horse
 
-**2.** Give the horse any name (it can not include special characters like # or ')
+**2.** Give the horse any name (it can not include special characters like # ' _  or spaces)
 
 **3.** Hold any goat horn you want in your hand
 
@@ -43,21 +38,24 @@ There's currently a bug (should be fixed in 1.21), where if the horse you want t
 
 ---
 
-**Works for** horses, donkeys, llamas, mules, skeleton_horses, zombie_horses, trader_llamas **by default**
+**Works for** horses, donkeys, llamas, mules, skeleton horses, zombie horses, trader llamas and camels **by default**
 
 ## Config
-
-### For 1.21.6+
-
-You no longer need to change any files!
 
 ```
 /trigger callyourhorse.config
 ```
 
----
+### Features
+- Change what horses should by callable without an owner
+- Select if teleporting only works if there's no player on the horse (enabled by default)
+- Select if the player should automatically mount the horse after teleporting it (disabled by default)
 
-### For 1.21.5 and below
+## Showcase
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7kVfUDHsRTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Config for 1.21.5 and below
 
 **After you've changed anything, you have to run /reload in the game for it to work**
 
@@ -77,10 +75,9 @@ root/data/callyourhorse/tags/entity_type/callable_without_owner.json
 ```
 and add or remove the entities you want to be callable without an owner
 
+## Bugs & Incompatibilities
 
-## Showcase
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7kVfUDHsRTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+- There's currently a bug (should be fixed in 1.21), where if the horse you want to call is too far away it will be invisible after the teleport --> to fix that you have to **rejoin the game**
 
 ## Guides
 
