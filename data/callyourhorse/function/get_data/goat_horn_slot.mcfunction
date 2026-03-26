@@ -1,1 +1,0 @@
-data modify storage callyourhorse:root goat_horn_slot set from entity @s SelectedItemSlot

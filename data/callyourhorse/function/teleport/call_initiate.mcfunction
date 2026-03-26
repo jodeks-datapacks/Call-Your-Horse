@@ -1,1 +1,0 @@
-function callyourhorse:teleport/initiate_teleport with storage callyourhorse:root

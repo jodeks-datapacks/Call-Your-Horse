@@ -1,6 +1,6 @@
 {
   "values": [
-  "callyourhorse:load",
-  "callyourhorse:load_message"
-]
+    "call_your_horse:setup",
+    "call_your_horse:load_message"
+  ]
 }
