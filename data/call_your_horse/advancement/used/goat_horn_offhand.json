@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "used_goat_horn_offhand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "items": "minecraft:goat_horn",
+              "components": {
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "call_your_horse:app/call/start_offhand"
+  }
+}

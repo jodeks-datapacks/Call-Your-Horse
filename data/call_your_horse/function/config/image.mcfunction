@@ -17,7 +17,6 @@ function call_your_horse:image/set_image_data {\
     {translate: "call_your_horse.description", fallback: "Easily call your horse with a goat horn"},\
     "",\
     [{translate: "jodek.datapack_version", fallback: "Datapack version: ", color: "#00a800"}, {text: "v1.6.4", color: "#54fc54"}],\
-    [{translate: "jodek.game_version", fallback: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
     "",\
     [{translate: "jodek.by", fallback: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\
     {text: "modrinth.com/datapack/call-your-horse", color: "#a800a8"},\

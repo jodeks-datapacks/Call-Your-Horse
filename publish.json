@@ -1,7 +1,7 @@
 {
-  "project_id": "QuDyXDNw",
-  "curseforge_project_id": "1426187",
-  "curseforge_mod_project_id": "1426188",
+  "modrinth_id": "QuDyXDNw",
+  "curseforge_id": "1426187",
+  "curseforge_mod_id": "1426188",
   "curseforge_slug": "call-your-horse",
   "loaders": ["datapack"],
   "game_versions": [

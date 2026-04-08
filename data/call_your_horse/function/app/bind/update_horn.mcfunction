@@ -1,0 +1,3 @@
+$execute if data entity @s SelectedItem.components."minecraft:custom_data".audioplayer run return run item replace entity @s hotbar.$(selected_item_slot) with goat_horn[custom_name='$(custom_name)',lore=[{color:"dark_purple",italic:false,text:"Owner: $(player_name)"}],custom_data={tag:{call_your_goat_horn:1b},stored_UUID:{UUID:$(UUID)},audioplayer:'$(audioplayer)'},enchantment_glint_override=true]
+
+$item replace entity @s hotbar.$(selected_item_slot) with goat_horn[custom_name='$(custom_name)',lore=[{color:"dark_purple",italic:false,text:"Owner: $(player_name)"}],custom_data={tag:{call_your_goat_horn:1b},stored_UUID:{UUID:$(UUID)}},enchantment_glint_override=true,instrument="$(instrument)"]

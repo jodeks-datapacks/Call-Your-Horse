@@ -113,13 +113,6 @@ $dialog show @s {\
         type:"run_command",\
         command:"function call_your_horse:config/dialog_config with storage call_your_horse:root data"\
       }\
-    },\
-    {\
-      "label": "Callable Wihtout Owner Horses Config",\
-      "action": {\
-        type:"run_command",\
-        command:"function call_your_horse:config/sub_config/callable_without_owner_config with storage call_your_horse:root data"\
-      }\
     }\
   ]\
 }

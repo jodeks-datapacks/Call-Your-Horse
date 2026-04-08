@@ -1,0 +1,3 @@
+$execute as @e[predicate=call_your_horse:callable,nbt={UUID:$(UUID_from_item)}] if entity @s[predicate=call_your_horse:no_player_on_mount] run teleport @s[nbt={Owner:$(UUID),UUID:$(UUID_from_item)}] @a[nbt={UUID:$(UUID)},limit=1]
+
+$execute as @e[predicate=call_your_horse:callable,nbt={UUID:$(UUID_from_item)}] if entity @s[predicate=call_your_horse:no_player_on_mount] run scoreboard players set &teleported call_your_horse.check 1

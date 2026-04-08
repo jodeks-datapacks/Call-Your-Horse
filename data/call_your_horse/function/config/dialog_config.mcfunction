@@ -14,12 +14,12 @@ $dialog show @s {\
   inputs:[\
     {\
       "type": "minecraft:boolean",\
-      "key": "dialog_no_player_on_horse",\
+      "key": "dialog_no_player_on_mount",\
       "label": {\
-        "translate": "call_your_horse.config.no_player_on_horse",\
+        "translate": "call_your_horse.config.no_player_on_mount",\
         "fallback": "Calling doesn't work when player is on horse"\
       },\
-      "initial": $(no_player_on_horse),\
+      "initial": $(no_player_on_mount),\
       "on_true": "1",\
       "on_false": "0"\
     },\
@@ -43,7 +43,7 @@ $dialog show @s {\
       },\
     "action": {\
       type:"dynamic/run_command",\
-      template:"function call_your_horse:config/save_config {dialog_no_player_on_horse:$(dialog_no_player_on_horse), dialog_mount_automatically:$(dialog_mount_automatically)}"\
+      template:"function call_your_horse:config/save_config {dialog_no_player_on_mount:$(dialog_no_player_on_mount), dialog_mount_automatically:$(dialog_mount_automatically)}"\
     }\
   },\
   actions:[\
@@ -55,17 +55,6 @@ $dialog show @s {\
       "action": {\
         type:"run_command",\
         command:"function call_your_horse:config/sub_config/callable_config with storage call_your_horse:root data"\
-      }\
-    },\
-    {\
-      "label": {\
-        "translate": "call_your_horse.config.callable_without_owner",\
-        "fallback": "Callable Without Owner Horses Config"\
-      },\
-      "width": 220,\
-      "action": {\
-        type:"run_command",\
-        command:"function call_your_horse:config/sub_config/callable_without_owner_config with storage call_your_horse:root data"\
       }\
     }\
   ]\
