@@ -3,16 +3,34 @@
     "used_goat_horn_selected": {
       "trigger": "minecraft:using_item",
       "conditions": {
-        "player": {
-          "equipment": {
-            "mainhand": {
-              "items": "minecraft:goat_horn",
-              "components": {
-                "minecraft:enchantment_glint_override": true
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:goat_horn",
+                  "components": {
+                    "minecraft:enchantment_glint_override": true
+                  }
+                }
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&time_since_goat_horn_use"
+              },
+              "score": "call_your_horse.check"
+            },
+            "range": 0
           }
-        }
+        ]
       }
     }
   },
