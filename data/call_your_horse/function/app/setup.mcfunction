@@ -24,3 +24,6 @@ function call_your_horse:config/set_default
 data modify storage call_your_horse:root data.target set value call_your_horse
 
 schedule function call_your_horse:lib_check 1s
+
+scoreboard objectives add call_your_horse.sneak_time custom:sneak_time
+scoreboard players set @a call_your_horse.sneak_time 0
