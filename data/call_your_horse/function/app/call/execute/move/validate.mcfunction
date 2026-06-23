@@ -5,6 +5,8 @@ execute store success score &UUID_check call_your_horse.check run data modify st
 
 execute unless data entity @s Owner run scoreboard players set &UUID_check call_your_horse.check 1
 
+execute if entity @s[type=#call_your_horse:no_owner] run scoreboard players set &UUID_check call_your_horse.check 0
+
 $execute as @a[nbt={UUID:$(UUID)},limit=1] if score &UUID_check call_your_horse.check matches 1 run \
   return run function call_your_horse:app/feedback/fail {translate:"call_your_horse.fail.no_owner",fallback:"You're not the owner of this horse"}
 
