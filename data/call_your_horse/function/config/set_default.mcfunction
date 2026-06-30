@@ -37,3 +37,7 @@ data modify storage call_your_horse:root data.dialog_zombie_horse_callable set v
 execute unless data storage call_your_horse:root data.camel_callable run data modify storage call_your_horse:root data.camel_callable set value 1
 execute unless score &camel_callable call_your_horse.config = &camel_callable call_your_horse.config run scoreboard players set &camel_callable call_your_horse.config 1
 data modify storage call_your_horse:root data.dialog_camel_callable set value "$(dialog_camel_callable)"
+
+execute unless data storage call_your_horse:root data.camel_husk_callable run data modify storage call_your_horse:root data.camel_husk_callable set value 1
+execute unless score &camel_husk_callable call_your_horse.config = &camel_husk_callable call_your_horse.config run scoreboard players set &camel_husk_callable call_your_horse.config 1
+data modify storage call_your_horse:root data.dialog_camel_husk_callable set value "$(dialog_camel_husk_callable)"
