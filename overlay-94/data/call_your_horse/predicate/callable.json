@@ -9,18 +9,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "horse",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:horse"
             }
           },
           {
@@ -44,18 +33,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "donkey",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:donkey"
             }
           },
           {
@@ -79,18 +57,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "mule",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:mule"
             }
           },
           {
@@ -114,18 +81,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "llama",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:llama"
             }
           },
           {
@@ -149,18 +105,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "trader_llama",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:trader_llama"
             }
           },
           {
@@ -184,18 +129,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "skeleton_horse",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:skeleton_horse"
             }
           },
           {
@@ -219,18 +153,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "zombie_horse",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:zombie_horse"
             }
           },
           {
@@ -254,18 +177,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:player",
-                "looking_at": {
-                  "type": "minecraft:camel",
-                  "distance": {
-                    "absolute": {
-                      "min": 0,
-                      "max": 10
-                    }
-                  }
-                }
-              }
+              "type": "minecraft:camel"
             }
           },
           {
@@ -275,6 +187,30 @@
               "target": {
                 "type": "minecraft:fixed",
                 "name": "&camel_callable"
+              },
+              "score": "call_your_horse.config"
+            },
+            "range": 1
+          }
+        ]
+      },
+      {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:camel_husk"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&camel_husk_callable"
               },
               "score": "call_your_horse.config"
             },
