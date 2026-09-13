@@ -1,6 +1,5 @@
 {
   "values": [
-    "call_your_horse:app/setup",
-    "call_your_horse:app/load_message"
+    "call_your_horse:app/setup"
   ]
 }

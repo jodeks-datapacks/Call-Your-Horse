@@ -1,4 +1,4 @@
-execute as @e[predicate=call_your_horse:callable,limit=1,tag=jodek.bind_target] run function jodek:api/data/get/owner with storage call_your_horse:root data
+execute as @e[predicate=jodek:call_your/horse,limit=1,tag=jodek.bind_target] run function jodek:api/data/get/owner with storage call_your_horse:root data
 
 execute store success score &UUID_check call_your_horse.check run data modify storage call_your_horse:root data.Owner set from entity @s UUID
 
