@@ -8,12 +8,6 @@
       {
         "text": "\"Call Your Horse\" (call_your_horse)"
       },
-      "\n",
-      {
-        "translate": "call_your_horse.description",
-        "fallback": "Call your horse with a goat horn",
-        "color": "#aaaaaa"
-      },
       "\n\n",
       {
         "translate": "jodek.version",
@@ -23,7 +17,7 @@
         "text": " "
       },
       {
-        "text": "2.1.2",
+        "text": "2.2.0",
         "color": "#55ff55"
       },
 
